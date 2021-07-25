@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/yellow_light">
+
+    <TextView
+        android:id="@+id/calculate_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_your"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"
+        android:padding="10dp"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculate_your"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/in_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/in_minutes"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="23sp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age"
+        android:layout_marginTop="15dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/select_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_date"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray"
+        android:textSize="23sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:rippleColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/in_minutes"
+        android:layout_marginTop="15dp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/tv_selected_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_date"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/select_date_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_date_actual"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_selected_date"
+        android:layout_marginTop="15dp"
+        tools:targetApi="lollipop"/>
+
+    <TextView
+        android:id="@+id/age_in_minutes_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_date_actual"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/age_in_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_in_minutes"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age_in_minutes_value"
+        android:layout_marginTop="15dp"
+        tools:targetApi="lollipop"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
